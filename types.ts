@@ -1,0 +1,9 @@
+
+export enum AppStatus {
+  IDLE,
+  IMAGE_UPLOADED,
+  DESCRIBING,
+  GENERATING,
+  SUCCESS,
+  ERROR
+}
