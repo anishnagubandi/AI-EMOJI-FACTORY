@@ -12,6 +12,21 @@ export default defineConfig(({ mode }) => {
         alias: {
           '@': path.resolve(__dirname, '.'),
         }
+      },
+      server: {
+        port: 3000,
+        proxy: {
+          '/api/gemini': {
+            target: 'https://generativelanguage.googleapis.com',
+            changeOrigin: true,
+            rewrite: (path) => path.replace(/^\/api\/gemini/, '')
+          },
+          '/api/pollinations': {
+            target: 'https://image.pollinations.ai',
+            changeOrigin: true,
+            rewrite: (path) => path.replace(/^\/api\/pollinations/, '')
+          }
+        }
       }
     };
 });

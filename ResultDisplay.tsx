@@ -1,9 +1,9 @@
 
 import React from 'react';
-import { AppStatus } from '../types';
+import { AppStatus } from './types';
 import { Spinner } from './Spinner';
-import { DownloadIcon } from './icons/DownloadIcon';
-import { SparklesIcon } from './icons/SparklesIcon';
+import { DownloadIcon } from './DownloadIcon';
+import { SparklesIcon } from './SparklesIcon';
 
 interface ResultDisplayProps {
   status: AppStatus;

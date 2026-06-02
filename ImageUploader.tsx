@@ -1,6 +1,6 @@
 
 import React, { useRef } from 'react';
-import { UploadIcon } from './icons/UploadIcon';
+import { UploadIcon } from './UploadIcon';
 
 interface ImageUploaderProps {
   onImageUpload: (file: File) => void;
